@@ -29,7 +29,7 @@ export default function About() {
           </h2>
 
           <p className="mt-6 max-w-3xl mx-auto text-lg text-gray-600 leading-8">
-            Established in 2019, Jamestuns Trading Venture has grown into
+            Established in 2012, Jamestuns Trading Venture has grown into
             a trusted provider of financial services, digital payments,
             business support and technology solutions. We are committed to
             helping individuals, entrepreneurs and organisations access

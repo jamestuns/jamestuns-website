@@ -72,13 +72,13 @@ export default function Contact() {
           </span>
 
           <h2 className="mt-4 text-5xl font-extrabold text-gray-900">
-            Let's Help Your Business Grow
+            Let's Find the Right Solution for You
           </h2>
 
           <p className="mt-6 max-w-3xl mx-auto text-lg text-gray-600 leading-8">
-            Whether you need financial services, business support,
-            digital solutions or want to become one of our agents,
-            we're ready to assist you.
+            Whether you need financial services, business support, travel and
+  international assistance, UK & Europe sourcing, logistics, digital
+  solutions or financing support, our team is ready to help.
           </p>
         </div>
 

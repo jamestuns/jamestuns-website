@@ -1,3 +1,4 @@
+import Image from "next/image";
 export default function Hero() {
   return (
     <>
@@ -88,7 +89,7 @@ export default function Hero() {
             <div className="relative flex justify-center">
 
               <img
-                src="/hero-team.png"
+                src="/hero-team.webp"
                 alt="Jamestuns"
                 className="relative z-10 w-full max-w-5xl"
               />
