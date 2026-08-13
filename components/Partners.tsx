@@ -1,13 +1,13 @@
 export default function Partners() {
   const partners = [
-    { name: "OPay", logo: "/partners/opay.png" },
-    { name: "Moniepoint", logo: "/partners/moniepoint.png" },
-    { name: "PalmPay", logo: "/partners/palmpay.png" },
-    { name: "flutterwave", logo: "/partners/flutterwave.png" },
-    { name: "Airtel", logo: "/partners/airtel.png" },
-    { name: "Glo", logo: "/partners/glo.png" },
-    { name: "mtn", logo: "/partners/mtn.png" },
-  ];
+  { name: "Opay", logo: "/Partners/opay.png" },
+  { name: "Moniepoint", logo: "/Partners/moniepoint.png" },
+  { name: "PalmPay", logo: "/Partners/palmpay.png" },
+  { name: "Flutterwave", logo: "/Partners/flutterwave.png" },
+  { name: "Airtel", logo: "/Partners/airtel.png" },
+  { name: "Glo", logo: "/Partners/glo.png" },
+  { name: "MTN", logo: "/Partners/mtn.png" },
+];
 
   return (
     <section className="py-20 bg-white">
