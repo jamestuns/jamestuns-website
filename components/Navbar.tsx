@@ -1,42 +1,177 @@
+"use client";
+
+import { useState } from "react";
+import Link from "next/link";
+
 export default function Navbar() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
+
   return (
     <header className="bg-white shadow-sm sticky top-0 z-50">
-      <nav className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+      <nav className="max-w-7xl mx-auto px-6 py-3">
 
-        {/* Logo */}
-        <a href="#home" className="flex items-center gap-3">
+        <div className="flex items-center justify-between">
 
-          <img
-            src="/jamestuns-shield-logo.png"
-            alt="Jamestuns Logo"
-            className="w-20 h-20 object-contain border border-red-500"
-          />
+          {/* Logo + Company Name */}
+          <Link
+            href="/"
+            onClick={closeMenu}
+            className="flex items-center gap-3"
+          >
+            <img
+              src="/jamestuns-shield-logo.png"
+              alt="Jamestuns Trading Venture"
+              className="h-16 w-16 object-contain"
+            />
 
-          <div>
-            <h1 className="text-2xl font-bold text-blue-500">
-              Jamestuns
-            </h1>
-            <p className="text-2xl font-bold text-blue-500">
-              Trading Venture
-            </p>
+            <div className="hidden sm:block">
+              <h1 className="text-xl font-extrabold text-blue-900 leading-tight">
+                Jamestuns
+              </h1>
+
+              <p className="text-xs font-semibold tracking-wider text-green-600 uppercase">
+                Trading Venture
+              </p>
+            </div>
+          </Link>
+
+          {/* Desktop Navigation */}
+          <div className="hidden md:flex items-center gap-8">
+
+            <Link
+              href="/"
+              className="font-medium text-gray-700 hover:text-blue-700 transition"
+            >
+              Home
+            </Link>
+
+            <Link
+              href="/about"
+              className="font-medium text-gray-700 hover:text-blue-700 transition"
+            >
+              About
+            </Link>
+
+            <Link
+              href="/services"
+              className="font-medium text-gray-700 hover:text-blue-700 transition"
+            >
+              Services
+            </Link>
+
+            <Link
+              href="/contact"
+              className="font-medium text-gray-700 hover:text-blue-700 transition"
+            >
+              Contact
+            </Link>
+
+            <Link
+              href="/agent"
+              className="bg-blue-700 hover:bg-blue-800 text-white px-6 py-3 rounded-xl font-semibold transition"
+            >
+              Become an Agent
+            </Link>
+
           </div>
 
-        </a>
+          {/* Mobile Menu Button */}
+          <button
+            type="button"
+            onClick={() => setMenuOpen(!menuOpen)}
+            className="md:hidden flex items-center justify-center w-11 h-11 rounded-lg border border-gray-200 text-gray-700 hover:bg-gray-50 transition"
+            aria-label={menuOpen ? "Close menu" : "Open menu"}
+            aria-expanded={menuOpen}
+          >
+            {menuOpen ? (
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={2}
+                stroke="currentColor"
+                className="w-6 h-6"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M6 18 18 6M6 6l12 12"
+                />
+              </svg>
+            ) : (
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={2}
+                stroke="currentColor"
+                className="w-6 h-6"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            )}
+          </button>
 
-        {/* Navigation */}
-        <ul className="hidden md:flex gap-8 font-medium text-gray-700">
-          <li><a href="#home" className="hover:text-blue-700">Home</a></li>
-          <li><a href="#about" className="hover:text-blue-700">About</a></li>
-          <li><a href="#services" className="hover:text-blue-700">Services</a></li>
-          <li><a href="#contact" className="hover:text-blue-700">Contact</a></li>
-        </ul>
+        </div>
 
-        <a
-          href="#agent"
-          className="bg-blue-700 hover:bg-blue-800 text-white px-6 py-3 rounded-xl font-semibold"
-        >
-          Become an Agent
-        </a>
+        {/* Mobile Navigation */}
+        {menuOpen && (
+          <div className="md:hidden mt-4 border-t border-gray-100 pt-4 pb-2">
+
+            <div className="flex flex-col gap-2">
+
+              <Link
+                href="/"
+                onClick={closeMenu}
+                className="px-4 py-3 rounded-lg font-medium text-gray-700 hover:bg-blue-50 hover:text-blue-700 transition"
+              >
+                Home
+              </Link>
+
+              <Link
+                href="/about"
+                onClick={closeMenu}
+                className="px-4 py-3 rounded-lg font-medium text-gray-700 hover:bg-blue-50 hover:text-blue-700 transition"
+              >
+                About
+              </Link>
+
+              <Link
+                href="/services"
+                onClick={closeMenu}
+                className="px-4 py-3 rounded-lg font-medium text-gray-700 hover:bg-blue-50 hover:text-blue-700 transition"
+              >
+                Services
+              </Link>
+
+              <Link
+                href="/contact"
+                onClick={closeMenu}
+                className="px-4 py-3 rounded-lg font-medium text-gray-700 hover:bg-blue-50 hover:text-blue-700 transition"
+              >
+                Contact
+              </Link>
+
+              <Link
+                href="/agent"
+                onClick={closeMenu}
+                className="mt-2 bg-blue-700 hover:bg-blue-800 text-white px-5 py-3 rounded-xl font-semibold text-center transition"
+              >
+                Become an Agent
+              </Link>
+
+            </div>
+
+          </div>
+        )}
 
       </nav>
     </header>

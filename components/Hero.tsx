@@ -41,14 +41,14 @@ export default function Hero() {
               <div className="mt-10 flex flex-wrap gap-5">
 
                 <a
-                  href="#services"
+                  href="/services"
                   className="rounded-xl bg-blue-900 text-white px-8 py-4 font-semibold hover:bg-blue-800 transition"
                 >
                   Our Services →
                 </a>
 
                 <a
-                  href="#contact"
+                  href="/contact"
                   className="rounded-xl border-2 border-green-500 text-green-700 px-8 py-4 font-semibold hover:bg-green-500 hover:text-white transition"
                 >
                   Become an Agent →
@@ -88,11 +88,14 @@ export default function Hero() {
             {/* RIGHT */}
             <div className="relative flex justify-center">
 
-              <img
-                src="/hero-team.webp"
-                alt="Jamestuns"
-                className="relative z-10 w-full max-w-5xl"
-              />
+<Image
+  src="/hero-team.webp"
+  alt="Jamestuns Trading Venture"
+  width={900}
+  height={700}
+  priority
+  className="relative z-10 w-full max-w-xl h-auto"
+/>
 
             </div>
 
