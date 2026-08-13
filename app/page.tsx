@@ -6,6 +6,7 @@ import WhyChooseUs from "@/components/WhyChooseUs";
 import About from "@/components/About";
 import CTA from "@/components/CTA";
 import Contact from "@/components/Contact";
+import WhatsAppButton from "@/components/WhatsAppButton";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -19,6 +20,7 @@ export default function Home() {
       <About />
       <CTA />
       <Contact />
+      <WhatsAppButton />
       <Footer />
     </>
   );
