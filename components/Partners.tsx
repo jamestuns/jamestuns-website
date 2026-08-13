@@ -1,5 +1,5 @@
 export default function Partners() {
-  const partners = [
+  const Partners = [
   { name: "Opay", logo: "/Partners/opay.png" },
   { name: "Moniepoint", logo: "/Partners/moniepoint.png" },
   { name: "PalmPay", logo: "/Partners/palmpay.png" },
@@ -34,16 +34,16 @@ export default function Partners() {
 
         <div className="mt-14 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-6">
 
-          {partners.map((partner) => (
+          {Partners.map((Partner) => (
 
             <div
-              key={partner.name}
+              key={Partner.name}
               className="bg-white rounded-2xl border border-gray-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition duration-300 flex items-center justify-center p-6"
             >
 
               <img
-                src={partner.logo}
-                alt={partner.name}
+                src={Partner.logo}
+                alt={Partner.name}
                 className="h-10 object-contain"
               />
 
