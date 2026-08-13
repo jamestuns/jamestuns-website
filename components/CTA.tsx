@@ -52,7 +52,7 @@ export default function CTA() {
             <div className="mt-10">
 
               <a
-                href="#contact"
+                href="/contact"
                 className="inline-block bg-white text-blue-700 font-bold px-8 py-4 rounded-xl shadow-lg hover:scale-105 transition"
               >
                 Apply Now
@@ -79,7 +79,7 @@ export default function CTA() {
                     Trusted Brand
                   </h4>
                   <p className="text-gray-600">
-                    Join a business trusted since 2019.
+                    Join a business trusted since 2012.
                   </p>
                 </div>
               </div>
