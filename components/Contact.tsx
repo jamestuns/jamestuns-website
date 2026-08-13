@@ -1,3 +1,6 @@
+import { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
+
 export default function Contact() {
   return (
     <section id="contact" className="py-24 bg-gray-50">
