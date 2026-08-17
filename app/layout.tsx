@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   },
 
   alternates: {
-    canonical: "https://jamestuns.com",
+    canonical: "https://www.jamestuns.com",
   },
 
   openGraph: {
@@ -35,13 +35,13 @@ export const metadata: Metadata = {
     description:
       "Financial, business, travel, international sourcing, logistics and digital solutions for individuals and businesses.",
 
-    url: "https://jamestuns.com",
+    url: "https://www.jamestuns.com",
 
     siteName: "Jamestuns Trading Venture",
 
     images: [
       {
-        url: "https://jamestuns.com/og-image.png",
+        url: "https://www.jamestuns.com/og-image.png",
         width: 1200,
         height: 630,
         alt: "Jamestuns Trading Venture",
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
     description:
       "Financial, business, travel, international sourcing, logistics and digital solutions for individuals and businesses.",
 
-    images: ["https://jamestuns.com/og-image.png"],
+    images: ["https://www.jamestuns.com/og-image.png"],
   },
 };
 

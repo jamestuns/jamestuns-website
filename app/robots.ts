@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://jamestuns.com/sitemap.xml",
+    sitemap: "https://www.jamestuns.com/sitemap.xml",
   };
 }
